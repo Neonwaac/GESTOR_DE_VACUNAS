@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Amsterdam&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    justify-content: center;
+    text-align: center;
+    background:url(./assets/background.jpg);
+    background-size: cover;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.wrapper{
+    margin: 0 auto;
+    margin-top: 10vh;
+    width: 420px;
+    background: white;
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    color: #333333;
+    padding: 30px 40px;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.logo{
+    width: 200px;
+    padding: 20px;
+}
+.wrapper h1{
+    font-size: 30px;
+    text-align: center;
+}
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px; /* Ajusta la altura si es necesario */
+    margin: 20px 0;
+}
+.input-box input,
+.wrapper select {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+.input-box select{
+    border-radius: 30px;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #333;
+    padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+    color: #333;
+}
+.input-box .icon{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+.wrapper button {
+    width: 100%;
+    height: 45px;
+    background: #333;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+.close-button {
+    color: darkslategray;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.top-bar{
+    background: purple;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.logo-bar{
+    width: 10vw;
+    display: flex;
+    justify-content: end;
+}
+.text-bar{
+    display: flex;
+    align-items: left;
+    font-size: 3vh;
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    color: white;
+}
+.bar-section{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.bar-actions{
+    justify-content: end;
+    margin-right: 20px;
+}
+.button-bar{
+    display: flex;
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid rgba(245, 245, 245, 0.377);
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    background: darkmagenta;
+    color: white;
+    transition-duration: 0.2s;
+}
+.button-bar:hover{
+    background: purple;
+    transition-duration: 0.2s;
+}
+.logo-bar img{
+    width: 10vh;
+}
+.container{
+    margin: 0 auto;
+    width: 50vw;
+    min-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.title{
+    margin: 50px 0px 10px 0px;
+    width: 100%;
+    background-color: purple;
+    border-radius: 50px 50px 0px 0px;
+    padding: 20px;
+}
+.title h1:hover{
+    font-size: 4.1vh;
+    transition-duration: 0.2s;
+}
+.title h1{
+    color: white;
+    font-size: 4vh;
+    transition-duration: 0.2s;
+}
+.table{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+}
+.column{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    height: 100%;
+}
+.tile{
+    width: 100%;
+    height: 30px;
+    border: 1px solid rgb(20,65,100,0.3);
+    background-color: whitesmoke;
+    padding: 20px 0px;
+    font-size: 2vh;
+    font-weight: 600;
+    transition-duration: 0.2s;
+}
+.Day{
+    background-color:purple;
+    color: whitesmoke;
+    font-size: 20px;
+    border: 1px solid rgb(108, 0, 108)
+}
+.table-btn{
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition-duration: 0.2s;
+}
+.show-btn{
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
+    background: green;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.show-btn:hover{
+    background: greenyellow;
+    color: black;
+    transition-duration: 0.2s;
+}
+.edit-btn{
+    background: url(./assets/edit.png) no-repeat center;
+    background-size: cover;
+    cursor: pointer;
+}
+.delete-btn{
+    background: url(./assets/delete.png) no-repeat center;
+    background-size: cover;
+    cursor: pointer;
+}
+.table-btn:hover{
+    filter: invert(80%);
+    transition-duration: 0.2s;
+}
+.case1{
+    background-color: aquamarine;
+}
+.case2{
+    background-color: salmon;
+}
+.case3{
+    background-color: pink;
+}
+.case4{
+    background-color: greenyellow;
+}
+.case5{
+    background-color: yellow;
+}
+.add-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 10vh;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 0px 0px 50px 50px;
+    margin: 10px 0px 0px 0px;
+    backdrop-filter: blur(40px);
+    box-shadow: 0 0 10px #ffffff;
+    background: purple;
+}
+.add-pet{
+    width: 40px;
+    height: 40px;
+    background: url(./assets/add.png) no-repeat;
+    background-size: cover;
+    transition-duration: 0.2s;
+}
+.add-pet:hover{
+    filter: invert(80%);
+    transition-duration: 0.2s;
+}
+

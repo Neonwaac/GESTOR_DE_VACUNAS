@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="../../assets/icon.png">
+    <title>Veterinaria Carevet</title>
+</head>
+<body>
+    <section class="top-bar">
+        <div class="bar-section">
+            <div class="logo-bar">
+                <img src="../../assets/icon.png">
+            </div>
+            <div class="text-bar">
+                Veterinaria Carevet
+            </div>
+        </div>
+        <div class="bar-section bar-actions">
+            <button class="button-bar" onclick="gopage('../../index.html')">Home</button>
+        </div>
+    </section>
+    <div class="wrapper">
+        <div class="logo-container">
+            <img src="../../assets/dark-icon.png" class="logo" alt="logo">
+        </div>
+        <form id="mascota-form">
+            <h1>Registra tu mascota</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Nombre de tu Mascota" id="nombre" required>
+            </div>
+            <div class="input-box">
+                <select id="animal" name="animal" required>
+                    <option value="" selected disabled>¿Qué animal es?</option>
+                    <option value="Perro">Perro</option>
+                    <option value="Gato">Gato</option>
+                    <option value="Conejo">Conejo</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Edad de tu Mascota" id="edad" required>
+            </div>
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script>
+    <script src="../../navigation.js"></script>
+</body>
+</html>

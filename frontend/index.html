@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/modals.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./assets/icon.png">
+    <title>Veterinaria Carevet</title>
+</head>
+<body>
+    <! Modal para editar !>
+    <div class="modal" id="editModal">
+        <div class="wrapper">
+            <span class="close-button" id="closeModal">&times;</span>
+            <h1>Editar Mascota</h1>
+            <div class="logo-container">
+                <img src="./assets/dark-icon.png" class="logo" alt="logo">
+            </div>
+            <form id="editForm">
+                <div class="input-box">
+                    <input type="text" placeholder="Nombre de la Mascota" id="editNombre" required>
+                </div>
+                <div class="input-box">
+                    <select id="editAnimal" name="animal" required>
+                        <option value="" selected disabled>¿Qué animal es?</option>
+                        <option value="Perro">Perro</option>
+                        <option value="Gato">Gato</option>
+                        <option value="Conejo">Conejo</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Edad de la Mascota" id="editEdad" required>
+                </div>
+                <button type="submit">Guardar Cambios</button>
+            </form>
+        </div>
+    </div>    
+    <section class="top-bar">
+        <div class="bar-section">
+            <div class="logo-bar">
+                <img src="./assets/icon.png">
+            </div>
+            <div class="text-bar">
+                Veterinaria Carevet
+            </div>
+        </div>
+        <div class="bar-section bar-actions">
+            <button class="button-bar" onclick="gopage('./')">Home</button>
+        </div>
+    </section>
+    <div class="pets-table">
+        <div class="container">
+            <div class="title">
+                <h1>MASCOTAS REGISTRADAS</h1>
+            </div>
+            <div class ="table" id="table">
+                <div class = "column" id="table-nombre">
+                    <div class = "tile Day">NOMBRE</div>
+                </div>
+                <div class = "column" id="table-animal">
+                    <div class = "tile Day">ANIMAL</div>
+                </div>
+                <div class = "column" id="table-edad">
+                    <div class = "tile Day">EDAD</div>
+                </div>
+                <div class = "column" id="table-historial">
+                    <div class = "tile Day">VACUNAS</div>
+                </div>
+                <div class="column" id="table-buttons">
+                    <div class = "tile Day">ACCIONES</div>
+                </div>
+            </div>
+            <div class = "add-container">
+                <div class = "add-pet" onclick="gopage('./navigation/enlistar/index.html')">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script>
+    <script src="navigation.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="../../assets/icon.png">
+    <title>Veterinaria Carevet</title>
+</head>
+<body>
+    <div class="modal" id="editHistorialModal">
+        <div class="wrapper">
+            <span class="close-button" id="closeHistorialModal">&times;</span>
+            <h1>Editar Historial</h1>
+            <div class="logo-container">
+                <img src="../../assets/dark-icon.png" class="logo" alt="logo">
+            </div>
+            <form id="editHistorialForm">
+                <div class="input-box">
+                    <input type="date" id="editFecha" required>
+                </div>
+                <button type="submit">Guardar Cambios</button>
+            </form>
+        </div>
+    </div>    
+    <section class="top-bar">
+        <div class="bar-section">
+            <div class="logo-bar">
+                <img src="../../assets/icon.png">
+            </div>
+            <div class="text-bar">
+                Veterinaria Carevet
+            </div>
+        </div>
+        <div class="bar-section bar-actions">
+            <button class="button-bar" onclick="gopage('../../index.html')">Home</button>
+        </div>
+    </section>
+    <div class="pets-table">
+        <div class="container">
+            <div class="title">
+                <h1>VACUNAS DEL<span id="titulo-mascota"></span></h1>
+            </div>
+            <div class ="table" id="table">
+                <div class = "column" id="table-vacuna">
+                    <div class = "tile Day">VACUNA</div>
+
+                </div>
+                <div class = "column" id="table-fecha">
+                    <div class = "tile Day">FECHA</div>
+
+                </div>
+                <div class="column" id="table-acciones">
+                    <div class = "tile Day">ACCIONES</div>
+                </div>
+            </div>
+            <div class = "add-container" id="add-container">
+                <div class = "add-pet" id="add-vacuna">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script>
+    <script src="../../navigation.js"></script>
+</body>
+</html>

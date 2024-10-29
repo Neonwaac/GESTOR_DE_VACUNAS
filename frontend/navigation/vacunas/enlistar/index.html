@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Vacunas</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section class="top-bar">
+        <div class="bar-section">
+            <div class="logo-bar">
+                <img src="../../../assets/icon.png">
+            </div>
+            <div class="text-bar">
+                Veterinaria Carevet
+            </div>
+        </div>
+        <div class="bar-section bar-actions">
+            <button class="button-bar" onclick="gopage('../../../index.html')">Home</button>
+        </div>
+    </section>
+    <div class="wrapper">
+        <h1>Registrar Vacuna</h1>
+        <div class="logo-container">
+            <img src="../../../assets/dark-icon.png" class="logo" alt="logo">
+        </div>
+            <form id="vacunaForm">
+                <div class="input-box">
+                <select id="vacunaSelect" name="vacuna">
+                    <option value="" selected disabled>Seleccionar Vacuna</option>
+                    <option value="1">Rabia</option>
+                    <option value="2">Parvovirus</option>
+                    <option value="3">Distemper (Moquillo)</option>
+                    <option value="4">Hepatitis Infecciosa Canina</option>
+                    <option value="5">Parainfluenza</option>
+                    <option value="6">Bordetella (Tos de las perreras)</option>
+                    <option value="7">Leptospirosis</option>
+                    <option value="8">Panleucopenia Felina</option>
+                    <option value="9">Rinotraqueítis Felina (Herpesvirus felino)</option>
+                    <option value="10">Calicivirus Felino</option>
+                    <option value="11">Leucemia Felina</option>
+                    <option value="12">Mixomatosis</option>
+                    <option value="13">Enfermedad Hemorrágica Viral</option>
+                    <option value="14">Giardia</option>
+                    <option value="15">Tétanos</option>
+                    <option value="16">Influenza</option>
+                    <option value="26">Calicivirus Felino</option>
+                    <option value="27">Leucemia Felina</option>
+                    <option value="28">Mixomatosis</option>
+                    <option value="29">Enfermedad Hemorrágica Viral</option>
+                    <option value="30">Giardia</option>
+                    <option value="31">Tétanos</option>
+                    <option value="32">Influenza</option>
+                </select>
+        </div>
+        <div class="input-box">
+            <input type="date" id="fechaVacuna" name="fecha" required>
+        </div>
+
+            <button type="submit">Registrar Vacuna</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../../../navigation.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
